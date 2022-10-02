@@ -1,0 +1,66 @@
+@import url(font.css);
+@import url(typography.css);
+
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body{
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 275px;
+    /* background-color: black; */
+
+}
+
+#header-wrapper{
+    position: fixed;
+    width: 275px;
+    background-color: red;
+    height: 100%;
+
+}
+
+main{
+    flex: 1 0 990px;
+    background-color: blue;
+}
+
+
+#main-wrapper{
+    background-color: yellow;
+    width: 990px;
+}
+
+#bottom-navigation{
+    position: fixed;
+    /* visibility: hidden; */
+    height: 52px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
